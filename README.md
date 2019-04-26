@@ -47,9 +47,10 @@ vars:
 
 Steps to deploy configuration:
 
-sudo salt-cp '*' ~/suricata-cfg.sh /tmp/suricata-cfg.sh
 
-sudo salt-cp '*' ~/suricata_vars.yaml /tmp/suricata_vars.yaml
+sudo salt-cp '*' /home/$USER/suricata-cfg.sh /tmp/suricata-cfg.sh
+
+sudo salt-cp '*' /home/$USER/suricata_vars.yaml /tmp/suricata_vars.yaml
 
 ￼sudo salt '*' cmd.run "bash /tmp/suricata-cfg.sh"￼￼
 
