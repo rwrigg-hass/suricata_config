@@ -134,7 +134,7 @@ function modify_suricata {
 
 
 
-if [[ ! -e $suricata_vars_file ]]
+if [[ ! -e $suricata_vars_file ]] ;then
   usage
   exit
 fi
