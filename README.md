@@ -7,6 +7,7 @@ Script to modify suricata.yaml for all sensors
 Create ~/suricata_vars.yaml containing desired suricata "vars" section:
 
 ### example ###
+```json
 vars:
   # more specific is better for alert accuracy and performance
   address-groups:
@@ -42,7 +43,7 @@ vars:
     MODBUS_PORTS: 502
     FILE_DATA_PORTS: "[$HTTP_PORTS,110,143]"
     FTP_PORTS: 21
-
+---
 
 
 Steps to deploy configuration:
